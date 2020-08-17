@@ -10,3 +10,24 @@ body {
   background-color: #eee;
   font-family: 'Lato', sans-serif;
 }
+
+.pricing-card {
+  width: calc(100%/3);
+  height: 150px;
+  border: 2px solid black;
+  text-align: center;
+  display: inline-block;
+}
+
+.instrumemt-name {
+  background-color: #FCD600;
+}
+.pricing-card ul {
+  list-style-type: none;
+
+}
+
+.pricing-select {
+  background-color: #FCD600;
+  border-radius: 4px;
+}
