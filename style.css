@@ -30,6 +30,8 @@ header {
 nav {display: block;}
 #nav-bar > ul > li {
   float: right;
+  padding: 10px;
+  list-style-type: none;
 
 }
 
