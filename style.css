@@ -20,16 +20,27 @@ body {
     padding-right: 55px;
   }
 
-#header {
+header {
   position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: inherit;
 }
 
-
+nav {display: block;}
 #nav-bar > ul > li {
   float: right;
 
 }
 
+main {padding-top: 50px;}
+
+#Features > p {
+  padding: 0 15px;
+}
+#Features > h2 {
+  padding: 15px;
+}
 .pricing-card {
   width: calc(100%/3);
   height: 150px;
