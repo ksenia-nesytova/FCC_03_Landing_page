@@ -28,11 +28,12 @@ header {
 }
 
 nav {display: block;}
+
 #nav-bar > ul > li {
-  float: right;
+  display: inline-block;
   padding: 10px;
   list-style-type: none;
-
+  float: right;
 }
 
 main {padding-top: 50px;}
@@ -46,9 +47,10 @@ main {padding-top: 50px;}
 .pricing-card {
   width: calc(100%/3);
   height: 150px;
-  border: 2px solid black;
+  border: 1px solid black;
   text-align: center;
   display: inline-block;
+  box-sizing: border-box;
 }
 
 .instrumemt-name {
