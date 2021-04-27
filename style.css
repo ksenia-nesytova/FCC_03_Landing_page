@@ -53,7 +53,9 @@ h1 {text-align: center;}
   text-align: left;
 }
 
-nav {display: block;}
+nav {
+  display: block;
+  padding-top: 50px;}
 
 #nav-bar > ul > li {
   display: inline-block;
@@ -69,22 +71,28 @@ main {padding-top: 50px;}
   text-align: center;
 }
 
+#video {
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
 #Features > p {
   padding: 0 15px;
 }
 #Features > h2 {
   padding: 15px;
 }
-.pricing-card {
+
+.pricing {
   display: flex;
   flex-direction: row;
-  width: auto;
-  min-width: calc(90%/3);
+}
+
+.pricing-card {
   height: 150px;
   border: 1px solid black;
   text-align: center;
-  display: inline-block;
-  box-sizing: border-box;
 }
 
 .instrumemt-name {
@@ -94,6 +102,10 @@ main {padding-top: 50px;}
   list-style-type: none;
 
 }
+
+/* .pricing-card + .pricing-card {
+  margin-left: 1em;
+} */
 
 .pricing-select {
   background-color: #FCD600;
@@ -116,4 +128,13 @@ footer {
 #footer > span {
   display: block;
   color: #444;
+}
+
+
+@media screen and (min-width: 600px) {
+  .pricing-card {
+    display: inline-block;
+    min-width: calc(80%/3);
+    max-width: 100%;
+  }
 }
