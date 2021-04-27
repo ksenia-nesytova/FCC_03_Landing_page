@@ -48,8 +48,8 @@ input[type="email"] {
 
 #submit {
   background-color: #FCD600;
-  border-radius: 4px;
-  padding: 5px;
+  border-radius: 3px;
+  padding: 0.25em 1.5em;
 }
 #Features {
   text-align: left;
