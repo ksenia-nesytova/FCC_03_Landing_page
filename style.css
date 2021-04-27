@@ -74,7 +74,7 @@ main {padding-top: 50px;}
 #video {
   max-width: 100%;
   max-height: 100%;
-  margin: 1em auto 1em;
+  margin: 1em auto 0.5em;
 }
 
 #Features > p {
@@ -103,9 +103,9 @@ main {padding-top: 50px;}
 
 }
 
-/* .pricing-card + .pricing-card {
-  margin-left: 1em;
-} */
+.pricing-card + .pricing-card {
+  margin-top: 1em;
+}
 
 .pricing-select {
   background-color: #FCD600;
@@ -136,5 +136,9 @@ footer {
     display: inline-block;
     min-width: calc(80%/3);
     max-width: 100%;
+  }
+
+  .pricing-card + .pricing-card {
+    margin-left: 1em;
   }
 }
