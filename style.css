@@ -22,27 +22,29 @@ body {
   }
 
 header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
   position: fixed;
   width: 100%;
   min-height: 50px;
   background-color: inherit;
-  display: flex;
-  justify-content: space-around;
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-  }
-}
+
 
 #header-img {
   width: 100%;
- height: 100%;
- max-width: 300px;
+ max-height: 100%;
+ max-width: 400px;
 }
 
 h1 {text-align: center;}
+
+input[type="email"] {
+  line-height: 1.5em;
+ }
 
 #submit {
   background-color: #FCD600;
@@ -54,8 +56,15 @@ h1 {text-align: center;}
 }
 
 nav {
-  display: block;
-  padding-top: 50px;}
+  display: flex;
+  padding-top: 50px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 
 #nav-bar > ul > li {
   display: inline-block;
@@ -76,6 +85,10 @@ main {padding-top: 50px;}
   max-height: 100%;
   margin: 1em auto 0.5em;
 }
+
+#form {
+  margin-top: 0.5em;
+  }
 
 #Features > p {
   padding: 0 15px;
@@ -109,7 +122,8 @@ main {padding-top: 50px;}
 
 .pricing-select {
   background-color: #FCD600;
-  border-radius: 4px;
+  border-radius: 3px;
+  padding: 0.25em 1.5em;
 }
 
 footer {
@@ -131,7 +145,7 @@ footer {
 }
 
 
-@media screen and (min-width: 600px) {
+@media  (min-width: 600px) {
   .pricing-card {
     display: inline-block;
     min-width: calc(80%/3);
